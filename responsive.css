@@ -98,6 +98,11 @@
         align-items: flex-end;
         justify-content: flex-end;
     }
+
+    .div-light1{
+        width: 100%;
+        margin: 0;
+    }
    
     #lightSlider-benefits h3{
         flex-basis: 10%;
@@ -230,6 +235,10 @@
 
         #check:checked ~ #navul {
             left: 0;
+          }
+
+          .logos{
+              flex-direction: row-reverse;
           }
 
 }

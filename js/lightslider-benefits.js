@@ -42,6 +42,7 @@ $(document).ready(function () {
           controls: true,
           prevHtml: "",
           nextHtml: "",
+          pause: 2000
         },
       },
     ],

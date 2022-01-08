@@ -37,6 +37,7 @@ $(document).ready(function() {
                     item:2,
                     slideMove:1,
                     slideMargin:6,
+                    pause: 2100,
                   }
             },
 

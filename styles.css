@@ -59,24 +59,38 @@
 
 }
 
+.nav2{
+    position: fixed;
+    width: calc(100vw - (100vw - 100%));
+    z-index: 100;
+}
 .logos{
     display: flex;
     flex-direction: row;
     background-color: var(--blue);
+    
 
 }
 
 .checkbtn{
-    font-size: 20px;
+    font-size: 45px;
+    padding-left: 2rem;
     color: white;
     line-height: 4rem;
     margin-right: 1rem;
     margin-left: 1rem;
     cursor: pointer;
     display: none;
-    position: fixed;
     z-index: 150;
-    right: 20%;
+    right: 0%;
+}
+
+.lSAction .lSNext{
+    display: none;
+}
+
+.lSAction .lSPrev{
+    display: none;
 }
 
 #check{
