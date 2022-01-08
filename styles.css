@@ -1,0 +1,626 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "popins";
+    src: url("./font/Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "popins semi";
+    src: url("./font/Poppins-SemiBold.ttf");
+    font-display: swap;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*GENERAL*/
+:root {
+    --blue: #005089;
+    --white: #f8f8f8ef;
+    --black: #1a2e35;
+  }
+
+  *::selection {
+    background:var(--blue);
+    color: var(--white);
+  }
+  
+  *::-moz-selection {
+    background:var(--blue);
+    color: var(--white);
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--white);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    width: 0.5rem;
+    background-color: var(--blue);
+  }
+
+.nav{
+    
+    font-family: "popins semi";
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    list-style: none;
+    flex-basis: 90%;
+
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue);
+
+}
+
+.checkbtn{
+    font-size: 20px;
+    color: white;
+    line-height: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 150;
+    right: 0%;
+}
+
+#check{
+    display: none;
+}
+
+.nav li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.first-section{
+    background-image: url('./media/background.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.info-div{
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+.logo{
+    background-image: url('./media/logo.png');
+    width: 4rem;
+    height: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+}
+
+.main-info{
+    background-color: var(--white);
+    flex-basis: 40%;
+}
+
+.reg{
+    flex-basis: 40%;
+}
+
+.titlepinfo{
+    display: flex;
+}
+
+.titlepinfo h1{
+    padding: 1rem;
+}
+
+.info-active{
+    position:absolute;
+    top: -100px;
+    transition: all 100ms;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: "popins";
+    font-size: 1.2rem;
+    padding: 2rem;
+    display: none;
+}
+
+.info{
+    background-color: var(--blue);
+    color: var(--white);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin:1rem;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.info:hover .info-active{
+    top: 40%;
+    display: block;
+
+}
+
+.title{
+    border-right: 0.5rem solid var(--blue);
+    border-top: 0.5rem solid var(--blue);
+}
+
+.title h1{
+    font-size: 4rem;
+    font-family: "popins";
+    font-weight: normal;
+    color: var(--blue);
+    padding-bottom: 0.7rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    line-height: 4.5rem;
+
+}
+
+.title .desc{
+    font-size: 2rem;
+    font-family: "popins";
+    color: var(--blue);
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.reg{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.reg a{
+    font-size: 1.4rem;
+    font-family: "popins";
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.second-section{
+    width: calc(100vw - (100vw - 100%));
+    color: var(--white);
+}
+
+.benefits{
+    background-color: var(--blue);
+}
+
+.benefits-title{
+    font-size: 3rem;
+    padding: 2rem;
+    padding-top: 3rem;
+    font-family: "popins";
+}
+
+#lightSlider-benefits{
+padding-bottom: 3rem !important;
+font-family: "popins";
+height: fit-content !important;
+}
+
+
+#lightSlider-benefits h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 1.5rem;
+    background-color: var(--black);
+    flex-basis: 30%;
+}
+
+#lightSlider-benefits p{
+    font-size: 1.14rem;
+    flex-basis: 70%;
+    padding: 1.5rem;
+    background-color: #375a6493;
+}
+
+.div-light1{
+    margin-left: 1rem;
+}
+
+.benefitsli{
+    display: flex;
+    align-items:flex-end;
+}
+
+.benefits-li1{
+    background-image: url('./media/2min.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+.benefits-li2{
+    background-image: url('./media/5min.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+.benefits-li3{
+    background-image: url('./media/4min.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+.benefits-li4{
+    background-image: url('./media/3min.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+.benefits-li5{
+    background-image: url('./media/1min.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.grid-learn{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+padding: 1rem;
+padding-top: 2rem;
+}
+
+.g-learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    height: 22rem;
+}
+
+.g-learn h3{
+    font-family: "popins";
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    height: 2rem;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.g-learn p{
+    font-family: "popins";
+    padding: 1rem;
+    font-size: 1rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+.g-learn .imgs{
+    background-image: url('./media/1.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-learn .imgs2{
+    background-image: url('./media/2.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-learn .imgs3{
+    background-image: url('./media/3.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-learn .imgs4{
+    background-image: url('./media/4.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fourth-container{
+
+}
+
+.temario{
+    background-color: var(--black);
+    color: white;
+    font-family: 'Popins';
+    height: 25rem;
+}
+
+.temario-title{
+    font-size: 3rem;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#lightSlider-temario{
+    padding-bottom: 3rem !important;
+    font-family: "popins";
+    height: fit-content !important;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    }
+    
+    #lightSlider-temario h3{
+        font-size: 1.5rem;
+        font-weight: normal;
+        padding-bottom: 1.5rem;
+        background-color: var(--black);
+        flex-basis: 30%;
+    }
+
+    .module ul li{
+        list-style: none;
+    }
+
+    .title-coach{
+        font-family: 'popins';
+        display: block;
+        font-size: 2rem;
+        color: var(--blue);
+        background-color: white;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .coach{
+        font-family: 'popins';
+    }
+
+    .c-img{
+        background-image: url('./media/coach1.jpeg');
+        width: 20rem;
+        height: 20rem;
+        background-size: contain;
+        flex-basis: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .c-img2{
+        background-image: url('./media/coach2.jpeg');
+        width: 20rem;
+        height: 20rem;
+        background-size: contain;
+        flex-basis: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .coach-info{
+        display: flex;
+    }
+    .c-info{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue);
+        color: white;
+        text-align: center;
+    }
+    .c-info h3{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .c-info p{
+        line-height: 2rem;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .f{
+        background-image: url('./media/f.png');
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 0.5rem;
+    }
+    .y{
+        background-image: url('./media/yt.png');
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 0.5rem;
+    }
+    .i{
+        background-image: url('./media/insta.png');
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 0.5rem;
+    }
+    .l{
+        background-image: url('./media/ln.png');
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        margin: 0.5rem;
+    }
+
+    .button{
+        transition: 300ms all ;
+        cursor: pointer;
+    }
+
+    .button:hover{
+        transform: scale(1.2);
+    }
+
+    .go{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .go h4{
+        text-align: center;
+        font-family: 'popins';
+        font-size: 2.5rem;
+        color: var(--blue);
+        background-color: white;
+        padding: 3rem;
+        margin-top: 3rem;
+    }
+
+    .price{
+        width: 30%;
+        font-family: 'Popins';
+        background-color: var(--blue);
+        padding: 3rem;
+    }
+    .price p{
+        color: white;
+        font-size: 2rem;
+    }
+
+    .price .months{
+        font-size: 1.1rem;
+        margin-top: 1.2rem;
+    }
+
+    .price span{
+        text-decoration: line-through;
+    }
+
+    .formfinal h3{
+        text-align: center;
+        font-family: 'popins';
+        font-size: 1.8rem;
+        color: white;
+        background-color: var(--black);
+        padding: 1.3rem;
+        margin-top: 3rem;
+    }
+
+    .square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'popins';
+    }
+
+    .calendar{
+        border-left: solid 10px var(--blue);
+        padding: 2rem;
+        margin: 1rem;
+        flex-basis: 30%;
+    }
+
+    .calendar h4{
+        color: var(--blue);
+        font-size: 1.7rem;
+        padding: 1rem;
+        margin: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .calendar p{
+        padding-left: 2rem;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    .calendar p{
+        background-color: var(--blue);
+        color: white;
+        padding: 1.1rem;
+        line-height: 2.1rem;
+    }
+
+    .form{
+        flex-basis: 30%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: 'popins';
+    }
+
+    input{
+        font-family: 'popins';
+        font-size: 1rem;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        width: 70%;
+        padding: 0.7rem;
+        margin: 0.2rem;
+        margin-bottom: 0.5rem;
+        border: none;
+        border-bottom: 3px solid var(--blue);
+    }
+
+    button{
+        font-family: 'popins';
+        background-color: none;
+        color: var(--blue);
+        padding: 0.7rem;
+        font-size: 1rem;
+        width: 75%;
+        border: none;
+        transition: all 300ms;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: var(--blue);
+        color: white;
+    }

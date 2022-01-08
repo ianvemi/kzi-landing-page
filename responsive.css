@@ -1,0 +1,224 @@
+@media (max-width:1153px) {
+
+    .grid-learn{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        }
+    
+    .g-learn h3{
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        height: 1.5rem;
+        margin-bottom: 0rem;
+        }
+
+    .g-learn p{
+            padding: 1rem;
+            height: 0rem;
+        }
+
+        .benefitsli{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+       
+        #lightSlider-benefits h3{
+            flex-basis: 10%;
+        }
+    
+        #lightSlider-benefits p{
+            font-size: 1.14rem;
+            flex-basis: 30%;
+        }
+    
+}
+
+@media (max-width:945px) {
+    .first-section{
+        background-size: cover;
+    }
+
+    .main-info{
+        flex-basis: 30%;
+    }
+    
+    .reg{
+        flex-basis: 30%;
+    }
+   
+    
+}
+
+@media (max-width:815px) {
+
+    .info-div{
+        flex-direction: row;
+        width: calc(100vw - (100vw - 100%));
+    }
+
+    .main-info{
+        width: calc(100vw - (100vw - 100%));
+    }
+
+    .first-section{
+        background-size: 280%;
+        background-position: right;
+    }
+
+    .main-info{
+        flex-basis: 100%;
+  
+    }
+    
+    .reg{
+        flex-basis: 100%;
+  
+    }
+
+    .title{
+        border: 0.5rem solid var(--blue);
+    }
+
+    .benefitsli{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+   
+    #lightSlider-benefits h3{
+        flex-basis: 10%;
+    }
+
+    #lightSlider-benefits p{
+        font-size: 1.14rem;
+        flex-basis: 30%;
+    }
+    
+    .grid-learn{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 4fr;
+        margin-bottom: 5rem;
+        }
+    
+    .g-learn h3{
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        height: 1rem;
+        margin-bottom: 2rem;
+        }
+
+    .g-learn p{
+            padding: 2rem;
+            height: 0rem;
+            font-size: 1.1rem;
+        }
+
+        #lightSlider-temario h3{
+            font-size: 1.2rem;
+        }
+
+        .c-img{
+            display: none;
+        }
+    
+
+        .c-img2{
+         display: none;
+        }
+    
+        .coach-info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .c-info{
+            flex-basis: 100%;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .c-info p{
+            padding: 0.6rem;
+            padding-left: 2rem;
+        }
+
+        .go h4{
+            font-size: 2rem;
+            padding: 1rem;
+            margin-top: 0rem;
+        }
+
+        .price{
+            width: 75%;
+        }
+
+        .form{
+            flex-basis: 100%;
+          
+        }
+
+        .calendar{
+            flex-basis: 100%;
+        }
+
+        .square{
+            flex-wrap: wrap;
+            width: calc(100vw - (100vw - 100%));
+        }
+
+        form{
+            width: 100%;
+        }
+
+        input{
+            width: 90%;
+            margin: 1rem;
+            font-size: 1.2rem;
+        }
+
+        button{
+            width: 100%;
+            padding: 2rem;
+            font-size: 1.3rem;
+        }
+
+        .checkbtn{
+            display: block;
+        }
+
+        .nav{
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            text-align: center;
+            transition: all 500ms;
+            flex-direction: column;
+            background-color: var(--blue);
+            z-index: 100;
+        }
+
+        .nav li{
+            display: block;
+            margin: 50px;
+            line-height: 30px;
+        }
+
+        .nav li a{
+            font-size: 2rem;
+        }
+
+        .nav li a:hover, a.active{
+            background-color: white;
+            color: var(--blue);
+        }
+
+        #check:checked ~ #navul {
+            left: 0;
+          }
+
+}
